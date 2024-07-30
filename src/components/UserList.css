@@ -1,0 +1,43 @@
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.user-table th {
+  cursor: pointer;
+  position: relative;
+}
+
+.user-table th::after {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.user-table th.sort-desc::after {
+  transform: rotate(180deg);
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

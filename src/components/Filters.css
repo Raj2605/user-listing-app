@@ -1,0 +1,32 @@
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filters select,
+.filters button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filters select:focus,
+.filters button:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.filters button {
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
